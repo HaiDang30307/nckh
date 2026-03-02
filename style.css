@@ -1,0 +1,261 @@
+/* Reset cơ bản và font chữ */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa; /* Màu nền nhẹ nhàng */
+    color: #333; /* Màu chữ dễ đọc */
+    line-height: 1.6;
+    overflow-x: hidden; /* Tránh thanh cuộn ngang do animation */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Merriweather', serif; /* Font chữ tiêu đề kiểu học thuật */
+    color: #0056b3; /* Màu xanh đậm học thuật */
+    margin-bottom: 1rem;
+}
+
+/* Định dạng section */
+section {
+    padding: 80px 0; /* Tăng padding để thoáng hơn */
+    border-bottom: 1px solid #e9ecef;
+    transition: background-color 0.3s ease;
+}
+
+section:hover {
+    background-color: #ffffff;
+}
+
+/* Navbar */
+.navbar {
+    box-shadow: 0 2px 4px rgba(0,0,0,.1);
+    transition: all 0.3s ease;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-family: 'Merriweather', serif;
+}
+
+.nav-link {
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+/* Hiệu ứng gạch chân nav-link */
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover::after, .nav-link.active::after {
+    width: 100%;
+}
+
+/* Header (Jumbotron) */
+.hero-section {
+    background: linear-gradient(135deg, #0056b3 0%, #004494 100%);
+    color: white;
+    padding: 120px 0; /* Tăng chiều cao */
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Hiệu ứng nền động nhẹ cho hero */
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255,255,255,0.1) 10%, transparent 10%);
+    background-size: 20px 20px;
+    animation: moveBackground 20s linear infinite;
+    z-index: 0;
+}
+
+@keyframes moveBackground {
+    0% { transform: translate(0, 0); }
+    100% { transform: translate(50px, 50px); }
+}
+
+.hero-section .container {
+    position: relative;
+    z-index: 1;
+}
+
+.hero-section h1 {
+    color: white;
+    font-size: 2.8rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.student-info p {
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+    opacity: 0.95;
+}
+
+/* Card styles cho các mục nội dung */
+.content-card {
+    background: white;
+    padding: 30px;
+    border-radius: 12px; /* Bo tròn mềm mại hơn */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    margin-bottom: 20px;
+    transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1); /* Easing mượt */
+    border: 1px solid transparent;
+}
+
+/* Hover Effect cho Card */
+.content-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    border-color: #e9ecef;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 50px;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 4px;
+    background-color: #0056b3;
+    border-radius: 2px;
+    transition: width 0.3s ease;
+}
+
+.section-title:hover::after {
+    width: 100px;
+}
+
+/* Biểu đồ */
+.chart-container {
+    position: relative;
+    height: 400px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.chart-description {
+    font-style: italic;
+    font-size: 0.95rem;
+    text-align: center;
+    color: #6c757d;
+    margin-top: 15px;
+}
+
+/* Danh sách học thuật */
+.academic-list {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.academic-list li {
+    padding: 15px 20px;
+    background: #f8f9fa;
+    margin-bottom: 12px;
+    border-left: 4px solid #0056b3;
+    border-radius: 0 6px 6px 0;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.academic-list li:hover {
+    transform: translateX(5px);
+    background-color: #e9ecef;
+}
+
+/* Footer */
+footer {
+    background-color: #343a40;
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+}
+
+/* Nút Presentation Mode */
+#presentation-toggle {
+    z-index: 1000;
+    transition: transform 0.3s ease;
+}
+
+#presentation-toggle:hover {
+    transform: scale(1.1) rotate(15deg);
+}
+
+/* --- CHẾ ĐỘ TRÌNH CHIẾU (PRESENTATION MODE) --- */
+body.presentation-mode {
+    overflow: hidden; /* Ẩn thanh cuộn */
+    background-color: #fff;
+}
+
+body.presentation-mode .navbar,
+body.presentation-mode #presentation-toggle,
+body.presentation-mode footer {
+    display: none !important;
+}
+
+body.presentation-mode section,
+body.presentation-mode header {
+    height: 100vh; /* Full màn hình */
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-bottom: none;
+    overflow-y: auto; /* Cho phép cuộn nội dung nếu quá dài */
+}
+
+body.presentation-mode .container {
+    max-width: 90%; /* Rộng hơn khi trình chiếu */
+}
+
+/* Print styles - Để in ra PDF đẹp */
+@media print {
+    .navbar, .btn-print, footer, #presentation-toggle, .no-print {
+        display: none !important;
+    }
+    
+    body {
+        background: white;
+        overflow: visible;
+    }
+    
+    .content-card {
+        box-shadow: none;
+        border: 1px solid #ddd;
+        page-break-inside: avoid;
+    }
+    
+    .hero-section {
+        background: none;
+        color: black;
+        padding: 20px 0;
+        border-bottom: 2px solid #000;
+    }
+
+    .hero-section h1 {
+        color: black;
+        text-shadow: none;
+    }
+    
+    section {
+        padding: 20px 0;
+    }
+}

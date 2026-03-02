@@ -1,0 +1,74 @@
+{
+  "news": [
+    {
+      "id": 1,
+      "title": "Cập nhật dữ liệu lạm phát tháng 2/2026",
+      "summary": "Tổng cục Thống kê vừa công bố chỉ số CPI tăng nhẹ 0.4% so với tháng trước do giá xăng dầu thế giới biến động.",
+      "category": "Kinh tế Vĩ mô",
+      "date": "2026-03-02T08:00:00"
+    },
+    {
+      "id": 2,
+      "title": "Fed giữ nguyên lãi suất trong kỳ họp mới nhất",
+      "summary": "Cục Dự trữ Liên bang Mỹ (Fed) quyết định không thay đổi lãi suất cơ bản, gây áp lực lên tỷ giá USD/VND.",
+      "category": "Tài chính Quốc tế",
+      "date": "2026-02-28T14:30:00"
+    },
+    {
+      "id": 3,
+      "title": "Giá vàng thế giới phá đỉnh lịch sử",
+      "summary": "Căng thẳng địa chính trị tại Trung Đông khiến nhà đầu tư tìm đến vàng như kênh trú ẩn an toàn.",
+      "category": "Thị trường Hàng hóa",
+      "date": "2026-02-25T09:15:00"
+    },
+    {
+      "id": 4,
+      "title": "Xuất khẩu gạo Việt Nam tăng trưởng 15% quý I",
+      "summary": "Nhu cầu lương thực toàn cầu tăng cao giúp kim ngạch xuất khẩu gạo đạt kỷ lục mới.",
+      "category": "Thương mại",
+      "date": "2026-02-20T10:00:00"
+    }
+  ],
+  "research_guide": [
+    {
+      "step": 1,
+      "title": "Chọn đề tài & Mục tiêu",
+      "description": "Bắt đầu với một vấn đề kinh tế cụ thể (ví dụ: lạm phát, thất nghiệp, tỷ giá). Đặt câu hỏi nghiên cứu: 'Yếu tố X ảnh hưởng thế nào đến Y?'.",
+      "checklist": [
+        "Đề tài có tính thực tiễn không?",
+        "Dữ liệu có khả thi để thu thập không?",
+        "Mục tiêu nghiên cứu có rõ ràng (SMART) không?"
+      ]
+    },
+    {
+      "step": 2,
+      "title": "Tổng quan tài liệu",
+      "description": "Tìm kiếm các bài báo, sách, báo cáo uy tín (GSO, WB, IMF) liên quan đến đề tài. Tóm tắt các kết quả nghiên cứu trước đó.",
+      "checklist": [
+        "Đã tìm ít nhất 5 tài liệu tham khảo uy tín?",
+        "Đã trích dẫn nguồn đúng quy định chưa?",
+        "Đã xác định được khoảng trống nghiên cứu chưa?"
+      ]
+    },
+    {
+      "step": 3,
+      "title": "Phương pháp & Dữ liệu",
+      "description": "Xác định phương pháp (định tính/định lượng). Thu thập dữ liệu thứ cấp từ các nguồn chính thống.",
+      "checklist": [
+        "Dữ liệu có đủ độ dài thời gian (time-series) không?",
+        "Phương pháp phân tích có phù hợp với dữ liệu không?",
+        "Đã xử lý số liệu thô (làm sạch dữ liệu) chưa?"
+      ]
+    },
+    {
+      "step": 4,
+      "title": "Kết quả & Thảo luận",
+      "description": "Trình bày kết quả qua biểu đồ, bảng số liệu. Phân tích ý nghĩa của các con số và so sánh với lý thuyết.",
+      "checklist": [
+        "Biểu đồ có rõ ràng, dễ hiểu không?",
+        "Kết quả có trả lời được câu hỏi nghiên cứu không?",
+        "Đã nêu bật được những phát hiện mới chưa?"
+      ]
+    }
+  ]
+}

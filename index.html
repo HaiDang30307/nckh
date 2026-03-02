@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Báo Cáo Nghiên Cứu Khoa Học - Kinh Tế</title>
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- ADD-ON CSS: News & Guide -->
+    <link rel="stylesheet" href="addon-style.css">
+    
+    <!-- EFFECT UPGRADE CSS -->
+    <link rel="stylesheet" href="effect-upgrade.css">
+    
+    <!-- ADVANCED EFFECT CSS -->
+    <link rel="stylesheet" href="advanced-effect.css">
+    
+    <!-- FEEDBACK ADD-ON CSS -->
+    <link rel="stylesheet" href="feedback-addon.css">
+
+    <!-- Font Awesome cho icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body data-bs-spy="scroll" data-bs-target="#navbar-example" data-bs-offset="100" tabindex="0">
+
+    <!-- Navbar -->
+    <nav id="navbar-example" class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">NCKH Kinh Tế</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#intro">Giới thiệu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#rationale">Lý do chọn đề tài</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#theory">Cơ sở lý thuyết</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#methodology">Phương pháp</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#detailed-analysis">Phân tích Chi tiết</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#data-analysis">Dữ liệu & Phân tích</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#conclusion">Kết luận</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Trang chủ / Giới thiệu -->
+    <header id="intro" class="hero-section" data-aos="fade-down" data-stagger>
+        <div class="container">
+            <h1 id="project-title" data-aos="zoom-in" data-aos-delay="200">Đang tải tên đề tài...</h1>
+            <div class="student-info mt-4" data-aos="fade-up" data-aos-delay="400">
+                <p><i class="fas fa-user-graduate"></i> Sinh viên: <span id="student-name">...</span> - MSSV: <span id="student-id">...</span></p>
+                <p><i class="fas fa-chalkboard-teacher"></i> GVHD: <span id="instructor">...</span></p>
+                <p><i class="fas fa-university"></i> <span id="faculty">...</span> - <span id="school">...</span></p>
+                <p><i class="fas fa-calendar-alt"></i> Thời gian: <span id="time">...</span></p>
+            </div>
+            <div class="mt-5 p-4 bg-white text-dark rounded shadow-sm mx-auto" style="max-width: 800px;" data-aos="flip-up" data-aos-delay="600">
+                <h5 class="text-primary fw-bold">Mục tiêu nghiên cứu:</h5>
+                <p id="objective" class="mb-0 fst-italic">...</p>
+            </div>
+        </div>
+    </header>
+
+    <div class="container my-5">
+        
+        <!-- Lý do chọn đề tài -->
+        <section id="rationale" data-aos="fade-up">
+            <h2 class="section-title">Lý Do Chọn Đề Tài</h2>
+            
+            <!-- ADVANCED EFFECT: Cause -> Effect Flow -->
+            <div class="cause-effect-container">
+                <div class="flow-step">
+                    <i class="fas fa-bomb fa-2x text-danger mb-2"></i>
+                    <p class="mb-0 fw-bold">Xung đột</p>
+                </div>
+                <i class="fas fa-long-arrow-alt-right flow-arrow"></i>
+                
+                <div class="flow-step">
+                    <i class="fas fa-link fa-2x text-warning mb-2"></i>
+                    <p class="mb-0 fw-bold">Đứt gãy cung ứng</p>
+                </div>
+                <i class="fas fa-long-arrow-alt-right flow-arrow"></i>
+                
+                <div class="flow-step">
+                    <i class="fas fa-chart-line fa-2x text-primary mb-2"></i>
+                    <p class="mb-0 fw-bold">Tăng chi phí</p>
+                </div>
+                <i class="fas fa-long-arrow-alt-right flow-arrow"></i>
+                
+                <div class="flow-step">
+                    <i class="fas fa-file-invoice-dollar fa-2x text-success mb-2"></i>
+                    <p class="mb-0 fw-bold">Lạm phát</p>
+                </div>
+                <i class="fas fa-long-arrow-alt-right flow-arrow"></i>
+                
+                <div class="flow-step">
+                    <i class="fas fa-balance-scale fa-2x text-info mb-2"></i>
+                    <p class="mb-0 fw-bold">Tác động GDP</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4" data-aos="fade-right" data-aos-delay="100">
+                    <div class="content-card h-100">
+                        <h4 class="text-primary"><i class="fas fa-globe-asia"></i> Bối cảnh</h4>
+                        <p id="rationale-context">...</p>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="content-card h-100">
+                        <h4 class="text-danger"><i class="fas fa-exclamation-circle"></i> Tính cấp thiết</h4>
+                        <p id="rationale-urgency">...</p>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-left" data-aos-delay="300">
+                    <div class="content-card h-100">
+                        <h4 class="text-success"><i class="fas fa-book-reader"></i> Ý nghĩa</h4>
+                        <p id="rationale-significance">...</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Cơ sở lý thuyết -->
+        <section id="theory" data-aos="fade-up">
+            <h2 class="section-title">Cơ Sở Lý Thuyết & Tổng Quan Tài Liệu</h2>
+            <div class="row">
+                <div class="col-md-6" data-aos="zoom-in-right">
+                    <div class="content-card">
+                        <h3><i class="fas fa-lightbulb"></i> Khái niệm cơ bản</h3>
+                        <ul id="theory-concepts" class="academic-list">
+                            <!-- JS sẽ điền vào đây -->
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6" data-aos="zoom-in-left">
+                    <div class="content-card">
+                        <h3><i class="fas fa-search"></i> Các nghiên cứu trước</h3>
+                        <ul id="theory-studies" class="academic-list">
+                            <!-- JS sẽ điền vào đây -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Phương pháp nghiên cứu -->
+        <section id="methodology" data-aos="fade-up">
+            <h2 class="section-title">Phương Pháp Nghiên Cứu</h2>
+            <div class="content-card" data-aos="flip-down">
+                <div class="row text-center">
+                    <div class="col-md-4 border-end">
+                        <h5 class="fw-bold"><i class="fas fa-random text-primary"></i> Phương pháp tiếp cận</h5>
+                        <p id="method-approach">...</p>
+                    </div>
+                    <div class="col-md-4 border-end">
+                        <h5 class="fw-bold"><i class="fas fa-database text-warning"></i> Nguồn dữ liệu</h5>
+                        <p id="method-source">...</p>
+                    </div>
+                    <div class="col-md-4">
+                        <h5 class="fw-bold"><i class="fas fa-chart-line text-success"></i> Phương pháp phân tích</h5>
+                        <p id="method-analysis">...</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Phân tích chi tiết (MỚI) -->
+        <section id="detailed-analysis" data-aos="fade-up">
+            <h2 class="section-title">Phân Tích Tác Động Chi Tiết (2024-2025)</h2>
+            <div id="detailed-analysis-container" class="row">
+                <!-- JS sẽ render nội dung vào đây -->
+            </div>
+        </section>
+
+        <!-- Dữ liệu và Phân tích (Biểu đồ) -->
+        <section id="data-analysis" data-aos="fade-up">
+            <h2 class="section-title">Dữ Liệu & Phân Tích Kết Quả</h2>
+            
+            <!-- ADVANCED EFFECT: Before - After Scrubber -->
+            <div class="comparison-container" data-aos="zoom-in">
+                <div class="row">
+                    <div class="col-md-6 text-center border-end">
+                        <h4 class="text-primary">Giá Dầu Thô (USD/thùng)</h4>
+                        <div class="comparison-label">
+                            <span class="comparison-status">Giai đoạn chuyển tiếp</span>
+                        </div>
+                        <input type="range" min="0" max="100" value="50" class="comparison-slider" data-before="70.8" data-after="100.9">
+                        <div class="comparison-value">85.85</div>
+                    </div>
+                    <div class="col-md-6 text-center">
+                        <h4 class="text-danger">Lạm Phát (%)</h4>
+                        <div class="comparison-label">
+                            <span class="comparison-status">Giai đoạn chuyển tiếp</span>
+                        </div>
+                        <input type="range" min="0" max="100" value="50" class="comparison-slider" data-before="1.84" data-after="3.15">
+                        <div class="comparison-value">2.50</div>
+                    </div>
+                </div>
+                <p class="text-center mt-3 small text-muted fst-italic"><i class="fas fa-hand-pointer"></i> Kéo thanh trượt để so sánh mức độ biến động Trước và Sau khi xung đột nổ ra (2021 vs 2022)</p>
+            </div>
+            
+            <!-- Hàng 1: Biểu đồ đường (GDP) -->
+            <div class="content-card glow-hover focus-lens-container" data-aos="zoom-in-up">
+                <h4 class="text-center mb-4">Phân tích xu hướng tăng trưởng</h4>
+                <div class="chart-container skeleton focus-item">
+                    <canvas id="lineChart"></canvas>
+                </div>
+                <p class="chart-description">Biểu đồ 1: Xu hướng biến động qua các năm.</p>
+            </div>
+
+            <!-- Hàng 2: Biểu đồ cột và tròn -->
+            <div class="row mt-4">
+                <div class="col-md-6" data-aos="fade-right">
+                    <div class="content-card h-100 glow-hover">
+                        <h4 class="text-center mb-4">So sánh chỉ tiêu lạm phát</h4>
+                        <div class="chart-container skeleton" style="height: 300px;">
+                            <canvas id="barChart"></canvas>
+                        </div>
+                        <p class="chart-description">Biểu đồ 2: So sánh mức lạm phát giữa các năm.</p>
+                    </div>
+                </div>
+                <div class="col-md-6" data-aos="fade-left">
+                    <div class="content-card h-100 glow-hover">
+                        <h4 class="text-center mb-4">Cơ cấu kinh tế</h4>
+                        <div class="chart-container skeleton" style="height: 300px;">
+                            <canvas id="pieChart"></canvas>
+                        </div>
+                        <p class="chart-description">Biểu đồ 3: Tỷ trọng các nhóm ngành trong năm gần nhất.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Kết luận -->
+        <section id="conclusion" data-aos="fade-up">
+            <h2 class="section-title">Kết Luận & Kiến Nghị</h2>
+            <div class="content-card bg-light border-primary border-start border-5" data-aos="fade-up" data-aos-delay="200">
+                <h4><i class="fas fa-clipboard-check"></i> Kết luận chính</h4>
+                <p id="conclusion-summary">...</p>
+            </div>
+            <div class="row mt-3">
+                <div class="col-md-6" data-aos="fade-up" data-aos-delay="400">
+                    <div class="content-card h-100">
+                        <h4><i class="fas fa-exclamation-triangle"></i> Hạn chế của đề tài</h4>
+                        <p id="conclusion-limitations">...</p>
+                    </div>
+                </div>
+                <div class="col-md-6" data-aos="fade-up" data-aos-delay="600">
+                    <div class="content-card h-100">
+                        <h4><i class="fas fa-rocket"></i> Hướng nghiên cứu tiếp theo</h4>
+                        <p id="conclusion-recommendations">...</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ADD-ON: News Section -->
+        <section id="news-section" data-aos="fade-up">
+            <div class="container">
+                <h2 class="section-title text-center mb-5"><i class="fas fa-newspaper text-primary"></i> Tin Tức Kinh Tế Mới Nhất</h2>
+                <div class="row" id="news-container">
+                    <!-- JS sẽ render tin tức vào đây -->
+                    <div class="text-center w-100 py-5">
+                        <div class="spinner-border text-primary" role="status">
+                            <span class="visually-hidden">Loading...</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ADD-ON: Research Guide Section -->
+        <section id="guide-section" data-aos="fade-up">
+            <div class="container">
+                <h2 class="section-title text-center mb-5"><i class="fas fa-graduation-cap text-success"></i> Hướng Dẫn Nghiên Cứu Khoa Học</h2>
+                <div class="row justify-content-center">
+                    <div class="col-lg-8" id="guide-container">
+                        <!-- JS sẽ render các bước hướng dẫn vào đây -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- ADD-ON: Modal Tin Tức -->
+    <div class="modal fade" id="newsModal" tabindex="-1" aria-labelledby="newsModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title fw-bold text-primary" id="newsModalLabel">Chi Tiết Tin Tức</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h4 id="modal-news-title" class="mb-3"></h4>
+                    <p class="text-muted small mb-3"><i class="far fa-clock"></i> <span id="modal-news-date"></span> | <span id="modal-news-category" class="badge bg-secondary"></span></p>
+                    <div id="modal-news-content" class="news-content-text">
+                        <!-- Nội dung chi tiết sẽ được JS điền vào đây -->
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FEEDBACK & VOTE ADD-ON -->
+    <section id="feedback-section" data-aos="fade-up">
+        <div class="container">
+            <h2 class="section-title text-center mb-3"><i class="fas fa-poll text-info"></i> Đánh Giá Website Nghiên Cứu</h2>
+            <p class="text-center text-muted fst-italic mb-4">Ý kiến của bạn giúp cải thiện chất lượng trình bày và nội dung nghiên cứu.</p>
+            
+            <div class="feedback-card text-center" data-aos="zoom-in" style="max-width: 600px; margin: 0 auto; border: 1px solid #dee2e6;">
+                
+                <!-- Khu vực sao đánh giá -->
+                <div id="simple-feedback-area">
+                    <div class="mb-2">
+                        <span class="fw-bold text-primary counter-value" data-target="5.0" style="font-size: 1.5rem;">0.0</span>
+                        <span class="text-muted small">/ 5.0 (<span class="counter-value" data-target="17">0</span> đánh giá)</span>
+                    </div>
+                    
+                    <div class="rating-simple mb-3">
+                        <!-- Các sao sẽ được JS xử lý sự kiện -->
+                        <i class="far fa-star fa-2x star-icon" data-value="1" style="cursor: pointer; color: #ffc107; transition: transform 0.2s;"></i>
+                        <i class="far fa-star fa-2x star-icon" data-value="2" style="cursor: pointer; color: #ffc107; transition: transform 0.2s;"></i>
+                        <i class="far fa-star fa-2x star-icon" data-value="3" style="cursor: pointer; color: #ffc107; transition: transform 0.2s;"></i>
+                        <i class="far fa-star fa-2x star-icon" data-value="4" style="cursor: pointer; color: #ffc107; transition: transform 0.2s;"></i>
+                        <i class="far fa-star fa-2x star-icon" data-value="5" style="cursor: pointer; color: #ffc107; transition: transform 0.2s;"></i>
+                    </div>
+                    
+                    <button id="btn-submit-vote" class="btn btn-primary px-4 rounded-pill">Gửi Đánh Giá</button>
+                </div>
+
+                <!-- Thông báo sau khi vote -->
+                <div id="feedback-thank-you" style="display: none;">
+                    <i class="fas fa-check-circle fa-3x text-success mb-3"></i>
+                    <h4 class="text-success">Cảm ơn bạn đã đánh giá website!</h4>
+                    <p class="text-muted small">Đánh giá của bạn đã được ghi nhận.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <h5 class="mb-2 fw-bold text-uppercase" style="font-size: 1rem; color: #adb5bd;">Website Báo Cáo NCKH</h5>
+            <p class="mb-1 text-light">Thực hiện bởi: Dương Đình Hải Đăng</p>
+            <p class="small text-white fst-italic mb-3">
+                Xin chân thành cảm ơn các anh chị trường Đại Học Kinh Tế TP.HCM đã cung cấp thông tin giúp đỡ em hoàn thiện website.
+            </p>
+            <hr class="border-secondary w-25 mx-auto">
+            <p class="small text-muted mb-0">Sử dụng HTML, CSS, JS & Chart.js</p>
+        </div>
+    </footer>
+
+    <!-- iOS Modal Container (Đặt cuối body) -->
+    <div id="ios-feedback-modal" class="ios-modal-overlay">
+        <div class="ios-modal-content">
+            <div class="ios-modal-grabber"></div>
+            <div class="ios-modal-body">
+                <!-- Icon sẽ được inject vào đây bằng JS -->
+                <div id="ios-modal-icon"></div>
+                <h4 class="ios-modal-title">Đánh giá đã được ghi nhận</h4>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom Script -->
+    <script src="script.js"></script>
+    
+    <!-- ADD-ON Script: News & Guide -->
+    <script src="addon-script.js"></script>
+    
+    <!-- EFFECT UPGRADE Script -->
+    <script src="effect-upgrade.js"></script>
+    
+    <!-- ADVANCED EFFECT Script -->
+    <script src="advanced-effect.js"></script>
+    
+    <!-- FEEDBACK ADD-ON Script -->
+    <script src="feedback-addon.js"></script>
+    
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true,
+            offset: 100
+        });
+    </script>
+</body>
+</html>

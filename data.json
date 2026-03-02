@@ -1,0 +1,92 @@
+{
+  "project_info": {
+    "title": "Tác Động Của Xung Đột Địa Chính Trị Toàn Cầu Đến Kinh Tế Việt Nam (2022-2025)",
+    "student_name": "Nguyễn Văn A",
+    "student_id": "SV2025001",
+    "instructor": "TS. Trần Thị B",
+    "faculty": "Khoa Kinh tế & Quản lý công",
+    "_comment_cac_khoa_kinh_te_khac": [
+      "Khoa Quản trị kinh doanh",
+      "Khoa Tài chính - Ngân hàng",
+      "Khoa Kế toán - Kiểm toán"
+    ],
+    "school": "Trường Đại học Mở TP.HCM (Ho Chi Minh City Open University)",
+    "time": "Tháng 3/2026",
+    "objective": "Phân tích ảnh hưởng của chiến tranh Nga-Ukraine và xung đột Trung Đông đến chuỗi cung ứng, lạm phát và tăng trưởng kinh tế Việt Nam."
+  },
+  "rationale": {
+    "context": "Thế giới 2024-2025 chứng kiến sự phân mảnh địa chính trị sâu sắc với các cuộc xung đột kéo dài (Nga-Ukraine, Dải Gaza, Biển Đỏ). Điều này gây đứt gãy chuỗi cung ứng, làm tăng chi phí vận tải và tạo áp lực lạm phát toàn cầu.",
+    "urgency": "Việt Nam có độ mở kinh tế lớn (>200% GDP), chịu tác động trực tiếp từ biến động giá năng lượng và nhu cầu thế giới suy giảm. Việc đánh giá rủi ro là cấp thiết để doanh nghiệp thích ứng.",
+    "significance": "Đề tài cung cấp bức tranh toàn cảnh về sự phụ thuộc lẫn nhau của kinh tế toàn cầu, giúp sinh viên hiểu rõ cơ chế truyền dẫn của các cú sốc bên ngoài vào nền kinh tế nội địa."
+  },
+  "theory": {
+    "concepts": [
+      {
+        "term": "Cú sốc cung (Supply Shock)",
+        "definition": "Sự kiện đột ngột làm gián đoạn nguồn cung hàng hóa (dầu mỏ, lương thực), dẫn đến giá cả tăng vọt và sản lượng giảm."
+      },
+      {
+        "term": "Nhập khẩu lạm phát",
+        "definition": "Tình trạng giá hàng hóa nhập khẩu tăng cao (do tỷ giá hoặc giá thế giới tăng) làm tăng mặt bằng giá trong nước."
+      },
+      {
+        "term": "An ninh năng lượng",
+        "definition": "Khả năng đảm bảo nguồn cung năng lượng liên tục với giá cả hợp lý, đặc biệt quan trọng khi xung đột xảy ra tại các vựa dầu lớn."
+      }
+    ],
+    "related_studies": [
+      "Báo cáo World Bank (2025): 'Triển vọng kinh tế toàn cầu: Ổn định mong manh trong bối cảnh phân mảnh'.",
+      "Nghiên cứu của VEPR (2024): 'Tác động của căng thẳng Biển Đỏ đến chi phí logistics và xuất khẩu Việt Nam'."
+    ]
+  },
+  "methodology": {
+    "approach": "Phân tích định tính kết hợp số liệu thống kê mô tả.",
+    "data_source": "Tổng cục Thống kê (GSO), Bộ Công Thương, IMF, World Bank, Bloomberg (Dữ liệu cập nhật đến Q4/2024).",
+    "analysis_method": "So sánh chuỗi số liệu theo thời gian (Time-series Analysis) và phân tích SWOT (Cơ hội - Thách thức)."
+  },
+  "detailed_analysis": [
+    {
+      "title": "Thương mại & Chuỗi cung ứng",
+      "icon": "fa-shipping-fast",
+      "positive": "Việt Nam hưởng lợi từ xu hướng dịch chuyển chuỗi cung ứng (China+1). Xuất khẩu gạo tăng giá kỷ lục do lo ngại an ninh lương thực toàn cầu.",
+      "negative": "Căng thẳng Biển Đỏ khiến chi phí vận tải sang EU/Mỹ tăng 50-70%. Thời gian giao hàng kéo dài thêm 10-15 ngày, gây rủi ro phạt hợp đồng."
+    },
+    {
+      "title": "Năng lượng & Lạm phát",
+      "icon": "fa-gas-pump",
+      "positive": "Lạm phát 2024 được kiểm soát tốt (3.63%), thấp hơn mục tiêu 4.5% của Quốc hội nhờ chính sách điều hành giá linh hoạt.",
+      "negative": "Giá xăng dầu thế giới biến động mạnh (tăng giảm thất thường) gây khó khăn cho dự báo và điều hành giá trong nước. Áp lực tăng giá điện vẫn còn."
+    },
+    {
+      "title": "Đầu tư FDI & Tỷ giá",
+      "icon": "fa-money-bill-wave",
+      "positive": "FDI thực hiện năm 2024 đạt kỷ lục mới (~23.2 tỷ USD), cho thấy niềm tin của nhà đầu tư vào sự ổn định chính trị của Việt Nam.",
+      "negative": "Áp lực tỷ giá USD/VND lớn trong nửa đầu năm 2024 do Fed duy trì lãi suất cao, làm tăng chi phí nhập khẩu nguyên liệu và trả nợ nước ngoài."
+    }
+  ],
+  "charts": {
+    "gdp_growth": {
+      "labels": ["2021", "2022", "2023", "2024 (Ước tính)", "2025 (Dự báo)"],
+      "data": [2.58, 8.02, 5.05, 7.09, 6.50],
+      "label": "Tăng trưởng GDP (%)",
+      "description": "Tốc độ tăng trưởng GDP Việt Nam phục hồi mạnh mẽ trong năm 2024 bất chấp bất ổn toàn cầu (Nguồn: GSO)."
+    },
+    "inflation": {
+      "labels": ["2021", "2022", "2023", "2024", "2025 (Dự báo)"],
+      "data": [1.84, 3.15, 3.25, 3.63, 4.00],
+      "label": "Lạm phát (CPI) %",
+      "description": "Lạm phát được kiểm soát dưới 4%, nhưng áp lực vẫn tăng dần do chi phí đẩy."
+    },
+    "sector_structure": {
+      "labels": ["Hoa Kỳ", "Trung Quốc", "EU", "ASEAN", "Hàn Quốc", "Nhật Bản"],
+      "data": [29.4, 16.8, 12.5, 9.8, 6.5, 6.2],
+      "label": "Thị trường Xuất khẩu 2024 (%)",
+      "description": "Cơ cấu thị trường xuất khẩu chính của Việt Nam năm 2024 (Nguồn: Tổng cục Hải quan)."
+    }
+  },
+  "conclusion": {
+    "summary": "Kinh tế Việt Nam 2024-2025 thể hiện sức chống chịu tốt với mức tăng trưởng ấn tượng (>7%). Tuy nhiên, rủi ro từ bên ngoài vẫn rất lớn, đặc biệt là biến động tỷ giá và chi phí logistics.",
+    "limitations": "Nghiên cứu chủ yếu dựa trên dữ liệu vĩ mô, chưa đi sâu vào tác động cụ thể tới từng doanh nghiệp nhỏ và vừa (SMEs).",
+    "recommendations": "Chính phủ cần tiếp tục chính sách tài khóa mở rộng hợp lý. Doanh nghiệp cần đa dạng hóa thị trường xuất nhập khẩu và chủ động phòng ngừa rủi ro tỷ giá."
+  }
+}

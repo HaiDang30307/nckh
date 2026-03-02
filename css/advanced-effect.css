@@ -1,0 +1,173 @@
+/* =========================================
+   ADVANCED EFFECT ADD-ON: ACADEMIC ANALYSIS
+   ========================================= */
+
+/* --- 1. Cause -> Effect Flow (Cơ chế kinh tế) --- */
+.cause-effect-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 40px 0;
+    flex-wrap: wrap;
+}
+
+.flow-step {
+    background: #fff;
+    border: 1px solid #dee2e6;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    width: 18%;
+    min-width: 150px;
+    opacity: 0.3;
+    transform: translateY(20px);
+    transition: all 0.5s ease;
+    position: relative;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.flow-step.active {
+    opacity: 1;
+    transform: translateY(0);
+    border-color: #007bff;
+    box-shadow: 0 5px 15px rgba(0,123,255,0.15);
+}
+
+.flow-arrow {
+    font-size: 1.5rem;
+    color: #adb5bd;
+    opacity: 0;
+    transition: opacity 0.5s ease 0.3s;
+}
+
+.flow-step.active + .flow-arrow {
+    opacity: 1;
+    color: #007bff;
+}
+
+/* --- 2. Before - After Scrubber (So sánh) --- */
+.comparison-container {
+    position: relative;
+    margin: 40px 0;
+    padding: 20px;
+    background: #f8f9fa;
+    border-radius: 12px;
+}
+
+.comparison-slider {
+    width: 100%;
+    margin: 20px 0;
+    -webkit-appearance: none;
+    height: 10px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    transition: opacity .2s;
+    border-radius: 5px;
+}
+
+.comparison-slider:hover {
+    opacity: 1;
+}
+
+.comparison-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    background: #007bff;
+    cursor: pointer;
+    border-radius: 50%;
+    box-shadow: 0 0 5px rgba(0,0,0,0.3);
+}
+
+.comparison-label {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    color: #6c757d;
+    margin-bottom: 10px;
+}
+
+.comparison-value {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #dc3545;
+    text-align: center;
+    transition: color 0.3s ease;
+}
+
+/* --- 4. Analysis Mode (Chế độ phân tích) --- */
+body.analysis-mode {
+    background-color: #e9ecef;
+}
+
+body.analysis-mode section:not(.active-analysis),
+body.analysis-mode header,
+body.analysis-mode footer {
+    filter: grayscale(100%) blur(2px);
+    opacity: 0.5;
+    pointer-events: none;
+    transition: all 0.5s ease;
+}
+
+body.analysis-mode section.active-analysis {
+    background-color: #fff;
+    box-shadow: 0 0 0 100vmax rgba(0,0,0,0.7);
+    z-index: 1000;
+    position: relative;
+    border-radius: 8px;
+    transform: scale(1.02);
+    transition: all 0.5s ease;
+}
+
+#analysis-toggle {
+    position: fixed;
+    bottom: 90px; /* Trên nút presentation */
+    right: 16px; /* Căn chỉnh với nút presentation */
+    z-index: 10000;
+    transition: all 0.3s ease;
+}
+
+/* --- 5. Focus Lens (Tập trung dữ liệu) --- */
+.focus-lens-container:hover .focus-item {
+    opacity: 0.3;
+    filter: blur(1px);
+    transition: all 0.3s ease;
+}
+
+.focus-lens-container .focus-item:hover {
+    opacity: 1;
+    filter: blur(0);
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    z-index: 10;
+    background: #fff;
+}
+
+/* --- 6. Logic Checkpoint (Tư duy nghiên cứu) --- */
+.checkpoint-toast {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    background: #fff;
+    border-left: 5px solid #28a745;
+    padding: 15px 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+    border-radius: 4px;
+    z-index: 9999;
+    transform: translateX(-150%);
+    transition: transform 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+    display: flex;
+    align-items: center;
+}
+
+.checkpoint-toast.show {
+    transform: translateX(0);
+}
+
+.checkpoint-icon {
+    color: #28a745;
+    font-size: 1.5rem;
+    margin-right: 15px;
+}
